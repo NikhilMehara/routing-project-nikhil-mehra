@@ -15,7 +15,7 @@ const Products = () => {
     useEffect(()=>{
        setLoading(true);
          axios({
-            url:`http://localhost:8080/products?_page=${page}&_limit=9`,
+            url:`${process.env.REACT_APP_SERVER_URL}/products?_page=${page}&_limit=9`,
             params:{
               page:page
             }

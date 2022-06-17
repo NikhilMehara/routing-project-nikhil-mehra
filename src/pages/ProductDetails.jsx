@@ -9,12 +9,11 @@ const ProductDetails = () => {
     const [data, setData] = useState([]);
     const {setCount} = useContext(CartContext);
     const {saved,setSaved} = useContext(CartContext);
-    const {dataOne,setDataOne} = useContext(CartContext);
 
     useEffect(()=>{
       setLoading(true);
         axios({
-           url:`http://localhost:8080/products/${params.id}`,
+           url:`${process.env.REACT_APP_SERVER_URL}/products/${params.id}`,
         }).then(res=>{
          setLoading(false);
          setData(res.data);
