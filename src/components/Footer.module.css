@@ -1,0 +1,29 @@
+.MainContainer{
+    display: grid;
+    background-color: #8000ff ;
+    color: white;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+
+.footerIcons{
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+    padding: 0 !important;
+}
+.socialIcons {
+    text-align: center;
+    display: inline-block !important;
+    padding-top: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.Info{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+  
